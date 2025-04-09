@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="bdy">
+  <!-- children: Only element nodes (excludes text, comment nodes).
+
+  childNodes: All types of nodes (elements, text, comments) -->
+
+  <h1 id="hed">welcome</h1>
+
+  <script>
+    // children
+let a=document.getElementById("bdy");
+let b=a.children
+console.log(b);
+// childrenNode
+let c=document.getElementById("bdy");
+let d=c.childNodes;
+console.log(d);
+
+
+  </script>
+</body>
+</html>

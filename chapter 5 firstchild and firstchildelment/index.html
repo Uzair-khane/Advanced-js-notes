@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="bdy">
+  <!-- firstChild can return any type of node (text, comment, or element), while firstElementChild only returns the first child element (excluding text and comment nodes) -->
+
+  <h1 id="hed">welcome</h1>
+
+  <script>
+    // firstchild
+let a=document.getElementById("bdy");
+let b=a.firstChild;
+console.log(b);
+// childrenNode
+let c=document.getElementById("bdy");
+let d=c.firstElementChild;
+console.log(d);
+
+
+  </script>
+</body>
+</html>
