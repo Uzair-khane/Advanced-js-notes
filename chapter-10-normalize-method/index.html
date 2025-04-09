@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Merges adjacent text nodes into one.Removes empty text nodes -->
+   <h1 id="heading">
+ 
+  </h1>
+</body>
+
+<script>
+  let target=document.getElementById("heading")
+target.appendChild(document.createTextNode("hello"))
+target.appendChild(document.createTextNode(" my name is  "))
+target.appendChild(document.createTextNode("uzair khan "))
+ let b=target.childNodes
+ console.log(b);
+ let c=target.normalize();
+ console.log(c);
+ 
+ 
+  
+
+  
+</script> 
+</html>

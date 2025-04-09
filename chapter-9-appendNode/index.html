@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- In JavaScript, you can use the appendChild() method to add a new child node to a specified parent node. This method adds the child node as the last child of the parent node -->
+
+  <ul id="list">
+    
+  </ul>
+</body>
+<script>
+  // appendchild
+// create li tag
+let a=document.createElement("li")
+let targetNd=document.getElementById("list");
+// appending
+targetNd.appendChild(a)
+// appendtextNode
+let text=document.createTextNode("i create text node")
+let node=document.getElementById("list");
+node.appendChild(text)
+// appendcommentnode
+let text1=document.createComment("this is my first comment")
+let node2=document.getElementById("list");
+node.appendChild(text1)
+</script>
+</html>
