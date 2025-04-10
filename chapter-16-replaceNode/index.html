@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- In JavaScript, you can replace a node using replaceChild() -->
+  <!-- 🔁 This removes oldNode and puts newNode in its place. -->
+   <ul id="list">
+    <li>item 1</li>
+    <li id="item2">item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+   </ul>
+</body>
+<script>
+  let list =document.getElementById("list")
+  let olditem=document.getElementById("item2")
+  let newNode=document.createElement("p")
+  newNode.textContent="this is paragraph"
+  list.replaceChild(newNode,olditem)
+</script>
+</html>

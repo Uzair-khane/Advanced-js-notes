@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- In JavaScript, cloneNode() is used to copy a DOM node. -->
+  <!-- true – clones the node and all its child nodes.
+     false – clones only the node, not its children. -->
+
+     <ul id="list">
+      <li>home</li>
+      <li>home</li>
+      <li>home</li>
+      <li>home</li>
+     </ul>
+     <div id="div"></div>
+</body>
+<!-- clone node for false it copy only parent node -->
+ <script>
+  let list=document.getElementById("list").cloneNode(false);
+  console.log(list);
+  // <!-- clone node for true  it copy parent and also its children node -->
+  let list2=document.getElementById("list").cloneNode(true);
+  console.log(list2);
+  // append clone node in div
+  let div=document.getElementById("div").appendChild(list2)
+  console.log(div);
+  
+ </script>
+</html>

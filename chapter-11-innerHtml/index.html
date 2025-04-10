@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- The innerHTML property sets or returns the HTML content (inner HTML) of an element -->
+   <ul id="list">
+     <li>home section</li>
+     <li>home section</li>
+     <li>home section</li>
+     <li>home section</li>
+     <li>home section</li>
+   </ul>
+
+</body>
+<script>
+// get innerhtml
+let list=document.getElementById("list").innerHTML;
+console.log(list);
+// set innerHTML
+let list2=document.getElementById("list").innerHTML="<li>home </li> <li>about section</li><li>service section</li>"
+console.log(list2);
+
+
+</script>
+</html>
