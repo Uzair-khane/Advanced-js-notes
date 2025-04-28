@@ -12,12 +12,18 @@
 
   <h1>event binding with javascript</h1>
   <button id="btn">click me </button>
-  
+
+  <h1>Add Event Listener</h1>
+  <button id="btn1">click me</button>
   <script>
     let btn=document.getElementById("btn");
     btn.onclick=function(){
       alert("button was clicked")
     }
+let btn1=document.getElementById("btn1");
+btn1.addEventListener("click",function disp(){
+  alert("button was clicked")
+})
   </script>
 </body>
 </html>
