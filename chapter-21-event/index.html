@@ -20,10 +20,15 @@
     btn.onclick=function(){
       alert("button was clicked")
     }
+
+    function disp(){
+      alert("button click")
+    }
 let btn1=document.getElementById("btn1");
-btn1.addEventListener("click",function disp(){
-  alert("button was clicked")
-})
+btn1.addEventListener("click",disp)
+
+// remove event listener
+btn1.removeEventListener("click", disp)
   </script>
 </body>
 </html>
