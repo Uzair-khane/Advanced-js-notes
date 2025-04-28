@@ -6,7 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>evnet binding with html element</h1>
+  <h1>event binding with html element</h1>
   <button onclick="alert('button was clicked')">click me</button>
+
+
+  <h1>event binding with javascript</h1>
+  <button id="btn">click me </button>
+  
+  <script>
+    let btn=document.getElementById("btn");
+    btn.onclick=function(){
+      alert("button was clicked")
+    }
+  </script>
 </body>
 </html>
