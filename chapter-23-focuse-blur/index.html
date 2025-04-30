@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Focus and Blur</h1>
+  <button onclick="openWindow()">Open New Window</button>
+  <button onclick="focusWindow()">Focus on Window</button>
+  <button onclick="blurWindow()">Blur Window</button>
+</body>
+<script>
+  var newWindow;
+
+  function openWindow() {
+    newWindow = window.open("", "_blank", "width=200px, height=399px");
+  }
+
+  function focusWindow() {
+    if (newWindow) {
+      newWindow.focus();
+    } else {
+      alert("No window is open to focus on.");
+    }
+  }
+
+  function blurWindow() {
+    if (newWindow) {
+      newWindow.blur();
+    } else {
+      alert("No window is open to blur.");
+    }
+  }
+</script>
+</html>
