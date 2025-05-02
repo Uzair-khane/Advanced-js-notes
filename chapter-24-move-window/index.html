@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Window</title>
+</head>
+<body>
+  <h1>Move Window</h1>
+  <button onclick="neww()" id="newwindow">Create New Window</button>
+  <button onclick="move()" id="movewindow">Move Window</button>
+</body>
+<script>
+  var newwin;
+
+  function neww() {
+    // Open a new window and assign it to the variable
+    newwin = window.open("", "my window", "width=200px, height=300px");
+    if (newwin) {
+      newwin.document.writeln("It's a new window");
+    } else {
+      alert("Failed to open a new window. Please check your browser settings.");
+    }
+  }
+
+  function move() {
+    if (newwin) {
+      // Move the window by 200px horizontally and vertically
+      newwin.moveBy(200, 200);
+      newwin.focus();
+    } else {
+      alert("No window is open to move.");
+    }
+  }
+</script>
+</html>
