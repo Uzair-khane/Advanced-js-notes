@@ -14,7 +14,7 @@
   </form>
   <hr>
   <form action="">
-    <label for="name">User name</label> <br>
+    <label for="name" id="name">User name</label> <br>
     <input type="text" name="name"> <br> <br>
     <label for="name1">User name</label> <br>
     <input type="password" name="name1"> <br> <br>
@@ -24,6 +24,10 @@
 <script>
   let form=document.forms[0];
 console.log(form);
+let field=document.getElementById("name");
+console.log(field);
+
+
 
 </script>
 </html>
