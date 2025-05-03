@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-   let a= document.cookie="username=uzair"
-    alert(a)
-  </script>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Set the cookie with proper syntax
+      document.cookie = "username=uzair; max-age=" + (60 * 60 * 24 * 1); // 1 day in seconds
+  
+    
+      alert(   document.cookie);
+    </script>
+  </body>
+  </html>
