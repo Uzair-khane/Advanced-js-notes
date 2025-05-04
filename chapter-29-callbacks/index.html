@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>callbacks</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function getdata(dataid,getnextdat){
+    setTimeout(() => {
+      console.log("USER ID " + " "+ dataid);
+      
+    if(getnextdat){
+      getnextdat()
+    }
+    }, 3000);
+   
+  }
+  getdata(1 ,()=>{
+    getdata(2, ()=>{
+      getdata(3)
+    })
+  })
+</script>
+</html>
