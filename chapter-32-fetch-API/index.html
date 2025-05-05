@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fetch api</title>
+</head>
+<body>
+  
+</body>
+<script>
+  async function mydata() {
+    await fetch('https://fakestoreapi.com/products/1')
+    .then(response => response.json())
+    .then(data => console.log(data))
+   
+    .catch((err)=>{console.log("hahahah try again"+err);
+    });
+    
+  }
+  mydata()
+</script>
+</html>
