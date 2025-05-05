@@ -9,10 +9,11 @@
   
 </body>
 <script>
-  let id=true;
-  let prom=new Promise((resolve,reject)=>{
-   if(id==true){
-    resolve("succes")
+ 
+function Prom(complete){
+ return new  Promise((resolve,reject)=>{
+   if(complete==true){
+    resolve("succes promises")
     
    }
    else{
@@ -21,7 +22,19 @@
 
    }
   })
-  console.log(prom );
+}
+ 
+
+ let succes=(message)=>{
+  console.log(message);
+  
+ }
+ let onreject=(error)=>{
+  console.log(error);
+  
+ }
+ Prom(true).then(succes)
+ Prom(true).catch(onreject)
   
 </script>
 </html>
